@@ -1,0 +1,18 @@
+n=input('enter name:')
+d={}
+for i in n:
+    d.update({i:ord(i)})
+print(d)
+output:
+enter name:abcd
+{'a': 97, 'b': 98, 'c': 99, 'd': 100}
+
+#prints hoew many times the character presents
+n=input('enter name:')
+d={}
+for i in n:
+    d.update({i:n.count(i)})
+print(d)
+output:
+enter name:aabbcds
+{'a': 2, 'b': 2, 'c': 1, 'd': 1, 's': 1}
