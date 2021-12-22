@@ -1,0 +1,7 @@
+m=int(input('enter no of persons:'))
+n=int(input('enter no of gifts:'))
+f=n%m
+if f==0:
+    print('equally shared')
+else:
+    print(m-f)
