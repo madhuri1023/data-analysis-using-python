@@ -5,3 +5,8 @@ if f==0:
     print('equally shared')
 else:
     print(m-f)
+ 
+ output:
+enter no of persons:22
+enter no of gifts:10
+12   
