@@ -8,3 +8,7 @@ for i in range(1,n+1):
 print('count=',count)
 print('sum of factors=',sum)
       
+output:
+enter the number:6
+count= 4
+sum of factors= 12
