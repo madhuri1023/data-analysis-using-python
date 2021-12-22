@@ -1,0 +1,15 @@
+n=int(input('enter number:'))
+c=0
+s=0
+while n!=0:
+    r=n%10
+    s=s*10+r
+    n=n//10
+    c=c+1
+print(s)
+print(c)
+
+output:
+enter number:121
+121
+3
