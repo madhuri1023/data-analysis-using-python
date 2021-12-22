@@ -1,0 +1,15 @@
+count=1
+sum=0
+n=int(input('enter the number:'))
+for i in range(1,n):
+    if n%i==0:
+            count=count+1
+            sum=sum+i
+if sum==n:
+    print('perfect number')
+if count==1:
+        print('prime number')
+ 
+output:
+enter the number:6
+perfect number
