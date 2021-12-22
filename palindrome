@@ -13,3 +13,9 @@ if s==x:
     print('palindrome')
 else:
     print('not a palindrome')
+
+output:
+enter a number121
+reverse number: 121
+count: 3
+palindrome
