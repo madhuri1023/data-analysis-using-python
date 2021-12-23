@@ -1,0 +1,66 @@
+import numpy as np
+name=['RaMya','NaiNcY','RaMu','ManI'] #prints as an array
+n=np.array(name)
+n
+output:
+array(['RaMya', 'NaiNcY', 'RaMu', 'ManI'], dtype='<U6')
+
+m=np.char.lower(name) #prints in lower case
+m
+output:
+array(['ramya', 'naincy', 'ramu', 'mani'], dtype='<U6')
+
+z=np.char.upper(name) #prints in upper case
+z
+output:
+array(['RAMYA', 'NAINCY', 'RAMU', 'MANI'], dtype='<U6')
+
+x=np.char.swapcase(name) #prints lower into upper case and viceversa
+x
+output:
+array(['rAmYA', 'nAInCy', 'rAmU', 'mANi'], dtype='<U6')
+
+x=np.char.split(name) # splits in each word
+x
+output:
+array([list(['RaMya']), list(['NaiNcY']), list(['RaMu']), list(['ManI'])],
+      dtype=object)
+      
+x=np.char.title(name) #prints starting letter ascapital 
+x
+output:
+array(['Ramya', 'Naincy', 'Ramu', 'Mani'], dtype='<U6')
+
+s1=['python','proggraming','language'] #prints if starting word starts with given letter
+np.char.startswith(s1,'py')
+output:
+array([ True, False, False])
+
+s1=['python','proggraming','language'] #prints if ending word starts with given letter
+np.char.endswith(s1,'ge')
+output:
+array([False, False,  True])
+
+a=np.char.add(['phy','lang'],['ton','uage']) #combine the two lists
+a
+output:
+array(['phyton', 'language'], dtype='<U8')
+
+a=['mani ','honey ','naincy ','ramu '] #combine the list
+b=['2','3','9','5']
+c=[' cse',' it',' ece',' eee']
+np.char.add(np.char.add(a,b),c)
+output:
+array(['mani 2 cse', 'honey 3 it', 'naincy 9 ece', 'ramu 5 eee'],
+      dtype='<U12')
+      
+s1=['mani','naincy','ramu','vishwa'] #arrange in ascending or descending order
+np.sort(s1)
+output:
+array(['mani', 'naincy', 'ramu', 'vishwa'], dtype='<U6')
+
+np.char.capitalize(s1) #prints capital letter
+output:
+array(['Mani', 'Naincy', 'Ramu', 'Vishwa'], dtype='<U6')
+
+
