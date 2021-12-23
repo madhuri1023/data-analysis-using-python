@@ -1,0 +1,47 @@
+#random 
+import numpy as np
+r=np.random.random() # prints a random number
+r
+output:
+0.3230450490512776
+
+r=np.random.random((4,4)) #prints a random 4*4 matrix
+r
+output:
+array([[0.59511477, 0.31179909, 0.05618797, 0.34454794],
+       [0.69394511, 0.45949392, 0.46270437, 0.56952264],
+       [0.11861891, 0.29230427, 0.45009675, 0.79122324],
+       [0.49460832, 0.33608772, 0.21478379, 0.31020489]])
+       
+r1=np.random.randn() #prints random negative value
+r1
+output:
+-2.1931784771867893
+
+r1=np.random.randn(3,4) #prints random negative value within a range
+r1
+output:
+array([[ 0.50877419,  0.57575975, -1.00914349, -0.06740946],
+       [-0.09121981,  0.56124744, -0.1123251 ,  1.81173729],
+       [-0.6876689 , -0.4850963 , -1.29351481, -1.06068006]])
+       
+r1=np.random.randint(1,20) #prints random integer value
+r1
+output:
+13
+
+r1=np.random.randint(1,20,(5,6)) #prints random integer value within a range 
+r1
+output:
+array([[11,  8, 10,  2,  7,  1],
+       [18,  7, 13, 16,  2,  6],
+       [12,  2,  7, 11,  9, 17],
+       [16,  8, 16,  1, 19,  6],
+       [10, 17, 11, 16,  1, 16]])
+       
+prints a OTP-6 digit number
+otp=np.random.randint(100000,999999) #prints random otp
+otp
+output:
+519623
+
